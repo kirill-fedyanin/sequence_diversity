@@ -6,7 +6,6 @@ from random import random
 import json
 
 
-
 def question_from_page(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')

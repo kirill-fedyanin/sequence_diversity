@@ -2,9 +2,6 @@
 
 my local experimental repository
 
-
-
-
 ```python
 questions  = [
     {
@@ -17,9 +14,22 @@ questions  = [
 ]
 ```
 
+data/question_db_2.json -- deduplicated by levenstein less then 2 on lowercase questions
+
+
+maxim asked to measure some metrics
+
+lvl 1
+what is word length
+
+lvl 2
+build docker
+
+lvl 3
+encode a single sentence
+
 lvl 4
-grub the sequences
+k close analyze
 
 lvl 5
-dedup
 
