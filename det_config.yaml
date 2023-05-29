@@ -1,3 +1,3 @@
 environment:
-  image: 'mephodybro/det:sequence_uncertainty-0.0.2'
+  image: 'mephodybro/det:sequence_uncertainty-0.0.3'
 work_dir: /app
