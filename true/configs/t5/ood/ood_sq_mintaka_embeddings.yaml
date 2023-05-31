@@ -1,0 +1,16 @@
+defaults:
+  - ood_base_config_t5
+  - data: wdsq
+  - ood_data: mintaka
+
+ue_methods:
+  type: embeddings
+
+ood:
+  corrupt: false
+
+model:
+  device: 0
+
+cache_dir: '~/sq_mintaka_embeddings'
+experiment_name: 'sq_mintaka_embeddings'

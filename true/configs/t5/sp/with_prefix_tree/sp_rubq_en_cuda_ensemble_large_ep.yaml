@@ -1,0 +1,17 @@
+defaults:
+  - sp_base_config_t5
+  - data: rubq_en
+
+ue_methods:
+  type: cuda_ensemble
+  ensemble:
+    ensembling_mode: ep
+
+prefix_tree: True
+model:
+  device: 0
+  name: google/t5-large-ssm-nq
+  path: google/t5-large-ssm-nq
+
+cache_dir: '~/prefix_sp_rubq_en_cuda_ensemble_ep'
+experiment_name: 'prefix_sp_rubq_en_cuda_ensemble_ep'

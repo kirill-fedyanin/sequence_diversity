@@ -1,0 +1,6 @@
+dataset_name: scisummnet
+text_name: text
+label_name: summary
+path:  ${get_home_path:0}/ue_abssum/data
+train_size_split: 0.8
+dev_size_split: 0.1

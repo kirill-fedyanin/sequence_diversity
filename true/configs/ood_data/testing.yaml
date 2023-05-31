@@ -1,0 +1,6 @@
+dataset_name: SpeedOfMagic/xsum_tiny
+text_name: document
+label_name: summary
+path: datasets
+use_subset: 100
+use_test_subset: 50

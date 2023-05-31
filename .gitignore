@@ -1,4 +1,4 @@
 .idea
-data
+data_store
 ipynb_checkpoints
-
+logs

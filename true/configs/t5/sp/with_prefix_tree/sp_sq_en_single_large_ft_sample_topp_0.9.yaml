@@ -1,0 +1,17 @@
+defaults:
+  - sp_base_config_t5
+  - data: wdsq
+
+ue_methods:
+  type: single
+
+do_sample: True
+top_p: 0.9
+
+model:
+  device: 0
+  name: google/t5-large-ssm-nq
+  path: '/trinity/home/r.vashurin/t5_large_wdsq_44/checkpoint-18064'
+
+cache_dir: '~/prefix_sp_rubq_en_single'
+experiment_name: 'prefix_sp_rubq_en_single'

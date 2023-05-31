@@ -1,0 +1,15 @@
+defaults:
+  - sp_base_config_t5
+  - data: mintaka
+
+ue_methods:
+  type: single
+
+prefix_tree: False
+model:
+  device: 0
+  name: google/t5-small-ssm-nq
+  path: google/t5-small-ssm-nq
+
+cache_dir: '~/sp_mintaka_single'
+experiment_name: 'sp_mintaka_single'

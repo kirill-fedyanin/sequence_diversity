@@ -1,0 +1,18 @@
+defaults:
+  - sp_base_config_t5
+  - data: rubq_en
+
+ue_methods:
+  type: cuda_ensemble
+  ensemble:
+    ensembling_mode: pe
+    dropout_rate: 0.04
+
+prefix_tree: True
+model:
+  device: 0
+  name: google/t5-xl-ssm-nq
+  path: google/t5-xl-ssm-nq
+
+cache_dir: '~/prefix_sp_rubq_en_cuda_ensemble_pe'
+experiment_name: 'prefix_sp_rubq_en_cuda_ensemble_pe'

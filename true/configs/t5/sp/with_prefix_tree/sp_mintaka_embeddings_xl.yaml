@@ -1,0 +1,15 @@
+defaults:
+  - sp_base_config_t5
+  - data: mintaka
+
+ue_methods:
+  type: embeddings
+
+prefix_tree: True
+model:
+  device: 0
+  name: google/t5-xl-ssm-nq
+  path: google/t5-xl-ssm-nq
+
+cache_dir: '~/prefix_sp_mintaka_embeddings'
+experiment_name: 'prefix_sp_mintaka_embeddings'

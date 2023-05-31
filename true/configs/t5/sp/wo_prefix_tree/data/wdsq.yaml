@@ -1,0 +1,6 @@
+dataset_name: rvashurin/wikidata_simplequestions
+text_name: question
+label_name: object
+path: datasets
+dataset_params:
+    name: answerable_en

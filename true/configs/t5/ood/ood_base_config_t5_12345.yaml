@@ -1,0 +1,49 @@
+output_dir: './workdir/'
+generation_configs_path: ${get_home_path:0}/ue_abssum/configs/generation  # have `:0` since we don't care about the arg
+hydra:
+  run:
+    dir: ${output_dir}/${now:%Y-%m-%d}/${seed}_${data.dataset_name}_${ood_data.dataset_name}_${ue_methods.type}_${experiment_name}
+  sweep:
+    dir: ${output_dir}/${now:%Y-%m-%d}/${seed}_${data.dataset_name}_${ood_data.dataset_name}_${ue_methods.type}_${experiment_name}
+    subdir: ${hydra.job.num}
+
+seed: 42
+cache_dir:
+offline_mode: False
+
+model_seeds: [12345]
+
+model:
+  name: google/t5-small-ssm-nq
+  path: google/t5-small-ssm-nq
+  generation_max_length: 200
+  num_return_sequences: 10
+  batch_size: 1
+  device: 0
+
+ue_methods:
+  type: single
+  single_names: [MSP,NSP,ENTROPY,USP,NSP-B]
+  ensemble_names: [EP-SEQ,EP-TOK,PE-TOK,PE-SEQ]
+  cuda_ensemble_names: [EP-SEQ,EP-TOK,PE-TOK,PE-SEQ]
+  mc_ensemble_names: [ENSP,BLEUVAR]
+  embeddings_names: [MD-ENCODER,MD-DECODER,NUQ-ENCODER,NUQ-DECODER,DDU-ENCODER,DDU-DECODER,RDE-ENCODER,RDE-DECODER]
+  emb_model_path:
+  ensemble:
+      de_model_paths:
+      batch_size: 1
+  kwargs:
+    softmax_t: 1
+
+data: ???
+ood_data: ???
+ood:
+  tokenizer: google/t5-small-ssm-nq
+  corrupt: False
+  shuffle: False
+
+metrics_to_use: [Accuracy]
+
+with_random: true
+
+prefix_tree: False

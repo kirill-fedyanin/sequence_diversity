@@ -1,0 +1,15 @@
+defaults:
+  - sp_base_config_t5
+  - data: wdsq
+
+ue_methods:
+  type: single
+
+prefix_tree: False
+model:
+  device: 0
+  name: google/t5-small-ssm-nq
+  path: google/t5-small-ssm-nq
+
+cache_dir: '~/sp_sq_en_single'
+experiment_name: 'sp_sq_en_single'

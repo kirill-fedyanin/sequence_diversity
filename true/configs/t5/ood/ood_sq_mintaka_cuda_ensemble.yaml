@@ -1,0 +1,16 @@
+defaults:
+  - ood_base_config_t5
+  - data: wdsq
+  - ood_data: mintaka
+
+ue_methods:
+  type: cuda_ensemble
+
+ood:
+  corrupt: false
+
+model:
+  device: 0
+
+cache_dir: '~/sq_mintaka_cuda_ensemble'
+experiment_name: 'sq_mintaka_cuda_ensemble'

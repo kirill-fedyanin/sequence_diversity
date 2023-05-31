@@ -1,0 +1,16 @@
+defaults:
+  - ood_base_config_t5
+  - data: rubq_en
+  - ood_data: rubq_ru
+
+ue_methods:
+  type: mc_ensemble
+
+ood:
+  corrupt: false
+
+model:
+  device: 0
+
+cache_dir: '~/rubq_en_ru_mc_ensemble'
+experiment_name: 'rubq_en_ru_mc_ensemble'

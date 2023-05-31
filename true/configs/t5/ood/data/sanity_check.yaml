@@ -1,0 +1,6 @@
+dataset_name: aeslc
+text_name: email_body
+label_name: subject_line
+path: datasets
+use_subset: 200
+use_test_subset: 100

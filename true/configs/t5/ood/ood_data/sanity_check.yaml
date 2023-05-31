@@ -1,0 +1,6 @@
+dataset_name: xsum
+text_name: document
+label_name: summary
+path: datasets
+use_subset: 200
+use_test_subset: 100

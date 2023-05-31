@@ -1,0 +1,14 @@
+defaults:
+  - sp_base_config_t5
+  - data: wdsq
+
+ue_methods:
+  type: single
+
+model:
+  device: 0
+  name: google/t5-large-ssm-nq
+  path: google/t5-large-ssm-nq
+
+cache_dir: '~/prefix_sp_rubq_en_single'
+experiment_name: 'prefix_sp_rubq_en_single'

@@ -1,0 +1,6 @@
+dataset_name: ["wmt17", "de-en"]
+text_name: en
+label_name: de
+path: datasets
+extra_key: translation
+use_subset: 5000

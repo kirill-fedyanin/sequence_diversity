@@ -51,11 +51,10 @@ so it's autoregressive probability distribution
 with some black box able to generate p(xi)
 
 
-
-
-
 ### Today's challenge
 lvl 4
-question answering
+good angle of the attack?
 
+We need to take different diversity measures and get down to them
+once again, what is diversity
 

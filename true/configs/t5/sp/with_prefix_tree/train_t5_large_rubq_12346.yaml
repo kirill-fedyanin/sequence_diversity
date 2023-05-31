@@ -1,0 +1,14 @@
+defaults:
+  - sp_base_config_t5
+  - data: rubq_en
+
+model:
+  device: 0
+  name: google/t5-large-ssm-nq
+  path: google/t5-large-ssm-nq
+
+cache_dir: '~/train_t5_rubq'
+experiment_name: 'train_t5_rubq'
+
+training_seed: 12346
+checkpoint_dir: '/trinity/home/r.vashurin/t5_large_rubq_12346'

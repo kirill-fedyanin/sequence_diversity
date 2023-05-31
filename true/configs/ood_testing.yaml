@@ -1,0 +1,51 @@
+defaults:
+  - data: testing
+  - ood_data: testing
+
+output_dir: './workdir/'
+generation_configs_path: ${get_home_path:0}/ue_abssum/configs/generation_testing  # have `:0` since we don't care about the arg
+hydra:
+  run:
+    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${data.dataset_name}_${ood_data.dataset_name}
+  sweep:
+    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${data.dataset_name}_${ood_data.dataset_name}
+    subdir: ${hydra.job.num}
+
+seed: 42
+cache_dir:
+offline_mode: false
+
+model_seeds: [42]
+
+model:
+  path: hf-internal-testing/tiny-random-bart
+  generation_max_length: 20
+  num_return_sequences: 2
+  batch_size: 50
+
+ue_methods:
+  names:
+  emb_model_path: hf-internal-testing/tiny-bert
+  de_model_paths: ["hf-internal-testing/tiny-random-bart"]
+  ensemble:
+    de_model_paths: ["hf-internal-testing/tiny-random-bart"]
+    batch_size: 32
+  kwargs:
+    softmax_t: 1
+
+data: ???
+ood_data: ???
+
+ood:
+  tokenizer: hf-internal-testing/tiny-random-bart
+  sample_count:
+  train_sample_count:
+  corrupt: true
+  shuffle: false
+
+metrics_to_use:  # TODO add support for testing all methods (current args use heavy models)
+  - rouge
+  - bleu
+  - accuracy
+
+with_random: true

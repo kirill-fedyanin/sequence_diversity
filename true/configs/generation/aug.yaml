@@ -1,0 +1,6 @@
+do_aug: True
+aug_model: bert-base-uncased
+mc_iterations: 5
+seed: 42
+to_eval_mode: False
+num_return_sequences: 4
