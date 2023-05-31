@@ -5,9 +5,9 @@ import torch
 from datasets import load_metric
 from tqdm import tqdm
 
-from ue_abssum.seq2seq_metrics import pair_bleu
-from ue_abssum.generate_utils import restore_token_level_data
-from ue_abssum.mc_utils import get_mc_output
+from true.seq2seq_metrics import pair_bleu
+from true.generate_utils import restore_token_level_data
+from true.mc_utils import get_mc_output
 
 
 def calculate_bleuvar_scores(hypotheses: List[List[str]]):

@@ -4,12 +4,12 @@ import torch
 from omegaconf import DictConfig
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-from ue_abssum.default_values import (
+from true.default_values import (
     DEFAULT_UE_METRICS,
     DEFAULT_SEQ2SEQ_METRICS,
     REV_OUTPUT_TYPE,
 )
-from ue_abssum.tokenize_data import tokenize_data
+from true.tokenize_data import tokenize_data
 
 def get_ats_metrics_names(ue_dict) -> List[str]:
     return list(

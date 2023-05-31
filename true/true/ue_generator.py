@@ -18,17 +18,17 @@ from transformers import (
     T5ForConditionalGeneration,
 )
 
-from ue_abssum.ue_dropout import replace_dropout
-from ue_abssum.default_values import REV_OUTPUT_TYPE, TOP_K
-from ue_abssum.ensemble_generator import EnsembleGenerator
-from ue_abssum.forward import forward
-from ue_abssum.generate import generate
-from ue_abssum.get_embeddings import get_embeddings
-from ue_abssum.mc_utils import (
+from true.ue_dropout import replace_dropout
+from true.default_values import REV_OUTPUT_TYPE, TOP_K
+from true.ensemble_generator import EnsembleGenerator
+from true.forward import forward
+from true.generate import generate
+from true.get_embeddings import get_embeddings
+from true.mc_utils import (
     get_mc_output,
     get_mc_forward_output,
 )
-from ue_abssum.utils import _load_model_and_tokenizer_if_necessary
+from true.utils import _load_model_and_tokenizer_if_necessary
 
 log = logging.getLogger()
 

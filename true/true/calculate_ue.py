@@ -2,9 +2,9 @@ from typing import List
 
 import logging
 
-from ue_abssum.ue_manager import STRATEGIES
+from true.ue_manager import STRATEGIES
 
-from ue_abssum.utils import get_method_name_and_strategy_kwargs
+from true.utils import get_method_name_and_strategy_kwargs
 
 
 log = logging.getLogger()

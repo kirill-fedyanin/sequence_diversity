@@ -17,7 +17,7 @@ from transformers import (
 )
 
 from peft import PeftModel, PeftConfig
-from ue_abssum.seq2seq_metrics import (
+from true.seq2seq_metrics import (
     calculate_rouge,
     calculate_bleu,
     calculate_summac,
@@ -28,19 +28,19 @@ from ue_abssum.seq2seq_metrics import (
     prepare_predictions_and_labels_for_rouge,
 )
 
-from ue_abssum.default_values import (
+from true.default_values import (
     DEFAULT_SEQ2SEQ_METRICS,
     DEFAULT_SEQ2SEQ_BASE_METRICS,
     DEFAULT_UE_METHODS,
     REV_OUTPUT_TYPE,
 )
-from ue_abssum.generate import generate
-from ue_abssum.plot_metrics import compare_with_random_and_oracle
-from ue_abssum.tokenize_data import tokenize_data
-from ue_abssum.ue_estimates import StrategyManager
-from ue_abssum.ue_generator import UeGenerator
-from ue_abssum.ue_metrics import get_all_scores
-from ue_abssum.utils import (
+from true.generate import generate
+from true.plot_metrics import compare_with_random_and_oracle
+from true.tokenize_data import tokenize_data
+from true.ue_estimates import StrategyManager
+from true.ue_generator import UeGenerator
+from true.ue_metrics import get_all_scores
+from true.utils import (
     get_default_ue_and_seq2seq_metrics_names,
     make_method_upper,
     _set_device,

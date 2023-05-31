@@ -5,7 +5,7 @@ from pathlib import Path
 
 from datasets import Dataset
 
-from ue_abssum.data.preprocessing import (
+from true.data.preprocessing import (
     _add_id_column_to_datasets,
     _use_train_subset,
     _filter_quantiles,

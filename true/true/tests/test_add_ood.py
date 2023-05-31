@@ -2,7 +2,7 @@ from datasets import Dataset
 from numpy.random import default_rng
 from transformers import AutoTokenizer
 
-from ue_abssum.add_ood import corrupt, add_ood_from_dataset
+from true.add_ood import corrupt, add_ood_from_dataset
 
 NORMAL = Dataset.from_dict(
     {

@@ -12,7 +12,7 @@ from nltk.tokenize import sent_tokenize
 from rouge_score import tokenize
 from tqdm import tqdm
 
-from ue_abssum.seq2seq_metrics_utils import pair_bleu, get_bart_scores
+from true.seq2seq_metrics_utils import pair_bleu, get_bart_scores
 
 log = logging.getLogger()
 

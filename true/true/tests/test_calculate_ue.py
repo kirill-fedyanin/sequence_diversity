@@ -1,5 +1,5 @@
-from ue_abssum.calculate_ue import calculate_ue
-from ue_abssum.default_values import DEFAULT_UE_METHODS
+from true.calculate_ue import calculate_ue
+from true.default_values import DEFAULT_UE_METHODS
 
 
 def test_empty():

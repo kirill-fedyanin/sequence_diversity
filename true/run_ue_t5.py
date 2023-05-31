@@ -16,9 +16,9 @@ from numpy.random import default_rng
 from transformers import AutoTokenizer
 from tqdm import tqdm
 
-from ue_abssum.utils import log_config
-from ue_abssum.main_decorator import main_decorator
-from ue_abssum.prefix_trie import MarisaTrie
+from true.utils import log_config
+from true.main_decorator import main_decorator
+from true.prefix_trie import MarisaTrie
 
 
 log = logging.getLogger()
@@ -59,11 +59,11 @@ def run_ue(config, work_dir):
     Main part of the script
     """
     # Imports inside function to set environment variables before imports
-    from ue_abssum.data.load_data import load_data
-    from ue_abssum.add_ood import add_ood_from_dataset, corrupt_row
-    from ue_abssum.ue_manager import UEManager
-    from ue_abssum.utils import get_generation_max_length
-    from ue_abssum.default_values import DEFAULT_UE_METHODS
+    from true.data.load_data import load_data
+    from true.add_ood import add_ood_from_dataset, corrupt_row
+    from true.ue_manager import UEManager
+    from true.utils import get_generation_max_length
+    from true.default_values import DEFAULT_UE_METHODS
 
     # Log config so that it is visible from the console
     log_config(log, config)

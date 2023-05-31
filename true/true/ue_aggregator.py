@@ -7,9 +7,9 @@ import pandas as pd
 from scipy.stats import t
 from copy import deepcopy
 
-from ue_abssum.plot_metrics import plot_all
-from ue_abssum.ue_manager import UEManager
-from ue_abssum.ue_metrics import get_roc_auc_scores
+from true.plot_metrics import plot_all
+from true.ue_manager import UEManager
+from true.ue_metrics import get_roc_auc_scores
 
 log = logging.getLogger()
 

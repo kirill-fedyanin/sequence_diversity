@@ -4,9 +4,9 @@ from typing import Tuple, Dict, Union, List
 import numpy as np
 from plotly import graph_objects as go
 
-from ue_abssum.default_values import DEFAULT_UE_METRICS, COLORS
-from ue_abssum.ue_metrics import get_all_scores, get_target_score
-from ue_abssum.utils import get_seq2seq_metrics_names, make_method_upper
+from true.default_values import DEFAULT_UE_METRICS, COLORS
+from true.ue_metrics import get_all_scores, get_target_score
+from true.utils import get_seq2seq_metrics_names, make_method_upper
 
 log = logging.getLogger()
 

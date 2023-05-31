@@ -7,7 +7,7 @@ import torch
 from scipy.stats import entropy
 
 from torch.nn.functional import log_softmax
-from ue_abssum.default_values import DEFAULT_TOKEN_LEVEL_MEASURES, TOP_K
+from true.default_values import DEFAULT_TOKEN_LEVEL_MEASURES, TOP_K
 
 log = logging.getLogger()
 

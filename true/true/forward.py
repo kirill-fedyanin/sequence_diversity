@@ -16,9 +16,9 @@ from transformers import (
     PegasusForConditionalGeneration,
 )
 
-from ue_abssum.default_values import DEFAULT_TOKEN_LEVEL_MEASURES
-from ue_abssum.forward_utils import calculate_token_level_measures
-from ue_abssum.tokenize_data import tokenize_data
+from true.default_values import DEFAULT_TOKEN_LEVEL_MEASURES
+from true.forward_utils import calculate_token_level_measures
+from true.tokenize_data import tokenize_data
 
 
 def forward(

@@ -9,26 +9,26 @@ from torch import nn
 import torch.optim as optim
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, set_seed
 
-from ue_abssum.generate import generate
-from ue_abssum.mahalanobis import (
+from true.generate import generate
+from true.mahalanobis import (
     compute_inv_covariance,
     mahalanobis_distance_with_known_centroids_sigma_inv,
     compute_density,
     get_gmm_log_probs,
     gmm_fit,
 )
-from ue_abssum.seq2seq_metrics import (
+from true.seq2seq_metrics import (
     calculate_top_1_acc
 )
-from ue_abssum.ue_estimates_utils import (
+from true.ue_estimates_utils import (
     calculate_bleuvar_scores,
     calculate_bleuvar_with_deterministic_scores,
     calculate_metricvar_scores,
     get_token_level_data,
 )
-from ue_abssum.ue_mlp import Net
-from ue_abssum.mc_utils import get_mc_output, get_mc_forward_output
-from ue_abssum.data.mlp_dataset import Dataset
+from true.ue_mlp import Net
+from true.mc_utils import get_mc_output, get_mc_forward_output
+from true.data.mlp_dataset import Dataset
 
 log = logging.getLogger()
 DEVICE = torch.cuda.is_available()
@@ -409,7 +409,7 @@ class StrategyManager:
         train_embeddings: torch.Tensor, test_embeddings: torch.Tensor, ue_dict=None
     ):
         import ray
-        from ue_abssum.packages.NUQ.nuq import NuqClassifier
+        from true.packages.NUQ.nuq import NuqClassifier
 
         log.info("Calculating NUQ scores...")
         train_labels = np.zeros(train_embeddings.shape[0])

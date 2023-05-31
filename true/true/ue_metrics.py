@@ -3,7 +3,7 @@ from typing import Dict, Union, List
 import numpy as np
 import sklearn.metrics as sk_metrics
 
-from ue_abssum.default_values import DEFAULT_UE_METRICS
+from true.default_values import DEFAULT_UE_METRICS
 
 
 def calculate_prediction_rejection_area(ue, metrics, use_oracle=True):

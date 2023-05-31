@@ -10,8 +10,8 @@ from tqdm import tqdm
 from transformers import set_seed
 from copy import deepcopy
 
-from ue_abssum.forward import forward
-from ue_abssum.generate import generate
+from true.forward import forward
+from true.generate import generate
 
 
 def get_mc_output(

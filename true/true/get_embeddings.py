@@ -6,12 +6,12 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers import DataCollatorWithPadding
 
-from ue_abssum.model_modifications import (
+from true.model_modifications import (
     get_model_without_cls_layer,
     _get_dim,
     ModelForFeaturesExtraction,
 )
-from ue_abssum.tokenize_data import tokenize_data
+from true.tokenize_data import tokenize_data
 
 
 def get_embeddings(

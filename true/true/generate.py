@@ -10,16 +10,16 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers import DataCollatorForSeq2Seq, AutoModelForSeq2SeqLM, AutoTokenizer
 
-from ue_abssum.default_values import DEFAULT_TOKEN_LEVEL_MEASURES, TOP_K
-from ue_abssum.ensemble_generator import EnsembleGenerator
-from ue_abssum.generate_utils import (restore_token_level_data,
-                                      update_token_level_scores,
-                                      from_text_to_id,
-                                      collect_token_level_uncertainties,
-                                      get_collect_fn)
-from ue_abssum.tokenize_data import tokenize_data
-from ue_abssum.model_modifications import _get_dim
-from ue_abssum.get_embeddings import get_embeddings_from_output
+from true.default_values import DEFAULT_TOKEN_LEVEL_MEASURES, TOP_K
+from true.ensemble_generator import EnsembleGenerator
+from true.generate_utils import (restore_token_level_data,
+                                 update_token_level_scores,
+                                 from_text_to_id,
+                                 collect_token_level_uncertainties,
+                                 get_collect_fn)
+from true.tokenize_data import tokenize_data
+from true.model_modifications import _get_dim
+from true.get_embeddings import get_embeddings_from_output
 
 
 def generate(

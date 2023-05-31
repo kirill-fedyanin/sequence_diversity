@@ -1,4 +1,4 @@
-from ue_abssum.ue_manager import UEManager
+from true.ue_manager import UEManager
 
 import os
 
