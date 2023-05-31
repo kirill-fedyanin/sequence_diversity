@@ -52,9 +52,9 @@ with some black box able to generate p(xi)
 
 
 ### Today's challenge
-lvl 4
-good angle of the attack?
+lvl 1
 
-We need to take different diversity measures and get down to them
-once again, what is diversity
+What is 100 most high-scored models in the area?
+Could we spot right answers with sbert?
+Diversity vs uncertainty -- how to present
 
