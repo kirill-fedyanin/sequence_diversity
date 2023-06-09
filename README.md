@@ -58,10 +58,12 @@ So it's fine to compare different methods on misclassify detection, but only if 
 For llm we could even extend it to rule that core model is the same
 
 wtf if the first question is included all the options
+fine tune kill diversity (mode collapsing)(how it did in gan)
+
 =============================
 
-
 =============================
+
 encoder only model -- allow to classify, right
 why it's better then encoder-decoder
 this is the same reason why e2e self driving would be better
@@ -69,17 +71,25 @@ you don't squeeze it to embeddings
 it's much harder to train, but it's viable
 =============================
 
+why would we have diversity
+one task one life
+i'm not really convinced
+step by step
 
-lvl 2:
-make random qa model answer the 5 questions
+the sampling is shit in malinin paper
+
+==============================
+
+ok, what is the idea
+
+there is useful of entropy for sequencece
+but as we can estimate the sо
+
+distances?
+entropy?
+
+=====================
 
 
 
-what is uncertainty
-what is accuracy
-fine tune kill diversity (mode collapsing)(how it did in gan)
-
-
-pip install einops
-nvtop
 
