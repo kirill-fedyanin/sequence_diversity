@@ -4,4 +4,4 @@ RUN apt-get install vim nvtop htop -y
 RUN pip install jupyter tqdm numpy scipy matplotlib scikit-learn tensorboardX pandas plotly
 RUN pip install transformers sentence-transformers datasets
 RUN pip install levenshtein hydra-core omegaconf marisa-trie pytreebank wget peft rouge-score
-RUN pip install nlpaug einops
+RUN pip install nlpaug einops openai

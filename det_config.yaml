@@ -2,4 +2,4 @@ environment:
   image: 'mephodybro/det:sequence_uncertainty-0.0.5'
 work_dir: /app
 resources:
-  slots: 3
+  slots: 1

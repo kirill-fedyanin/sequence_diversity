@@ -76,7 +76,7 @@ one task one life
 i'm not really convinced
 step by step
 
-the sampling is shit in malinin paper
+the sampling is questionable in malinins paper
 
 ==============================
 
@@ -85,11 +85,8 @@ ok, what is the idea
 there is useful of entropy for sequencece
 but as we can estimate the sо
 
-distances?
-entropy?
-
 =====================
 
 
-
-
+lvl 4
+predict 3 questions
