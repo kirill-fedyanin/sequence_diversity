@@ -85,8 +85,9 @@ ok, what is the idea
 there is useful of entropy for sequencece
 but as we can estimate the sо
 
-=====================
+==============================
+
+have two hours to make result
+let's go
 
 
-lvl 4
-predict 3 questions
