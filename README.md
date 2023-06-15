@@ -87,7 +87,14 @@ but as we can estimate the sо
 
 ==============================
 
-have two hours to make result
-let's go
+idea -- proper sampling for more diverse thing
+better sampling with sane answer
+
+today: how diversity depends on temperature
+
+lvl 1
+generate 5 samples once?
+
+
 
 
