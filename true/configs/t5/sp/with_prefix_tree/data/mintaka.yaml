@@ -1,4 +1,0 @@
-dataset_name: AmazonScience/mintaka
-text_name: question
-label_name: answerText
-path: datasets

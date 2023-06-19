@@ -1,4 +1,0 @@
-dataset_name: wikidata_simplequestions_ru
-text_name: question
-label_name: object
-path: datasets

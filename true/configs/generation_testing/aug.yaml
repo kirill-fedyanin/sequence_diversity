@@ -1,6 +1,0 @@
-do_aug: True
-aug_model: hf-internal-testing/tiny-bert
-mc_iterations: 2
-seed: 42
-to_eval_mode: False
-num_return_sequences: 4

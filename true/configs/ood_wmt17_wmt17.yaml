@@ -1,4 +1,0 @@
-defaults:
-  - ood_base_config
-  - data: wmt17
-  - ood_data: wmt17

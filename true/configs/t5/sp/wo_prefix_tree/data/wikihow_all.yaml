@@ -1,5 +1,0 @@
-dataset_name: wikihow_all
-text_name: text
-label_name: headline
-path:  ${get_home_path:0}/ue_abssum/data
-test_size_split: 1000

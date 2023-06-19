@@ -1,6 +1,0 @@
-mc_iterations: 5
-generate_top_p: 0.95
-top_k: 20
-early_stopping: False
-to_eval_mode: True
-do_sample: True

@@ -1,6 +1,0 @@
-dataset_name: rvashurin/wikidata_rubq
-text_name: question
-label_name: object
-path: datasets
-dataset_params:
-    name: multiple_ru
