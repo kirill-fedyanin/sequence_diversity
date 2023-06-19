@@ -92,9 +92,4 @@ better sampling with sane answer
 
 today: how diversity depends on temperature
 
-lvl 1
-generate 5 samples once?
-
-
-
 

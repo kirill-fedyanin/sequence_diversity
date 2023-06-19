@@ -1,5 +1,5 @@
 environment:
-  image: 'mephodybro/det:sequence_uncertainty-0.0.5'
+  image: 'mephodybro/det:sequence_uncertainty-0.0.6'
 work_dir: /app
 resources:
   slots: 1
